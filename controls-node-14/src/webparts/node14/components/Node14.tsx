@@ -1,12 +1,15 @@
 import * as React from 'react';
 import styles from './Node14.module.scss';
 import { INode14Props } from './INode14Props';
+import { ListView } from '@pnp/spfx-controls-react';
 import { PeoplePicker, PrincipalType } from '@pnp/spfx-controls-react/lib/PeoplePicker';
 
 export default class Node14 extends React.Component<INode14Props, {}> {
   public render(): React.ReactElement<INode14Props> {
     return (
       <div className={ styles.node14 }>
+        <ListView 
+        />
         <PeoplePicker
                     data-Property="pnpPeoplePicker"
                     context={this.props.context}
